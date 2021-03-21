@@ -22,7 +22,7 @@ class Board extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="board">
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -115,7 +115,7 @@ class Game extends React.Component {
         </div>
         <div className="game-info">
           <div>{status}</div>
-          <ol>{moves}</ol>
+          <ol className="history-buttons">{moves}</ol>
         </div>
       </div>
     );
